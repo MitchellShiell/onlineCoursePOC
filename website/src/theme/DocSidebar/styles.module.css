@@ -1,0 +1,9 @@
+.sidebarWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.fundingStatementContainer {
+  margin-top: auto;
+}
