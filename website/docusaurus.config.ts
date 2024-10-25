@@ -7,47 +7,38 @@ const config: Config = {
   tagline: 'Proof of concept for an open access course using Docusaurus',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
   url: 'https://async-course-poc.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'OICR', // Usually your GitHub org/user name.
-  projectName: 'Async Course POC', // Usually your repo name.
+  organizationName: 'OICR',
+  projectName: 'Async Course POC',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fr'],
   },
 
   plugins: [
-    './docsPlugin.ts',
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'Course',
-        path: 'Course',
-        routeBasePath: 'Course',
+        id: 'course',
+        path: 'course',
+        routeBasePath: 'course',
         sidebarPath: require.resolve('./sideBars/courseSidebars.ts'),
       },
     ],
     [
       '@docusaurus/plugin-content-docs',
-    {
-      id: 'community',
-      path: 'community',
-      routeBasePath: 'community',
-      sidebarPath: require.resolve('./sideBars/communitySidebars.ts'),
-    },
+      {
+        id: 'community',
+        path: 'community',
+        routeBasePath: 'community',
+        sidebarPath: require.resolve('./sideBars/communitySidebars.ts'),
+      },
     ],
   ],
 
@@ -55,28 +46,8 @@ const config: Config = {
     [
       'classic',
       {
-        // docs: {
-        //   sidebarPath: './sideBars/sidebars.ts',
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/MitchellShiell/onlineCoursePOC.git',
-        // },
-        // blog: {
-        //   showReadingTime: true,
-        //   feedOptions: {
-        //     type: ['rss', 'atom'],
-        //     xslt: true,
-        //   },
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/MitchellShiell/onlineCoursePOC/tree/main/packages/create-docusaurus/templates/shared/',
-        //   // Useful options to enforce blogging best practices
-        //   onInlineTags: 'warn',
-        //   onInlineAuthors: 'warn',
-        //   onUntruncatedBlogPosts: 'warn',
-        // },
+        docs: false,
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -85,7 +56,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Workshop POC',
@@ -94,12 +64,8 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
-        // {to: '/module1/intro', label: 'Module 1', position: 'left'},
-        // {to: '/module2/intro', label: 'Module 2', position: 'left'},
-        // {to: '/module3/intro', label: 'Module 3', position: 'left'},
-        {to: '/Course/overview', label: 'Course', position: 'left'},
+        {to: '/course/overview', label: 'Course', position: 'left'},
         {to: '/community/support', label: 'Community', position: 'left'},
-        // {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'localeDropdown',
           position: 'right',
@@ -119,15 +85,15 @@ const config: Config = {
           items: [
             {
               label: 'Module 1',
-              to: '/Course/overview',
+              to: '/course/overview',
             },
             {
               label: 'Module 2',
-              to: '/Course/overview',
+              to: '/course/overview',
             },
             {
               label: 'Module 3',
-              to: '/Course/overview',
+              to: '/course/overview',
             },
           ],
         },
