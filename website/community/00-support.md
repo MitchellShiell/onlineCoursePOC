@@ -40,7 +40,7 @@ When reporting technical problems:
 ## Community Standards
 
 - Be respectful and professional
-- Follow our [Code of Conduct](link-to-code-of-conduct)
+- Follow our [Code of Conduct](/community/code-of-conduct)
 
 ## Response Times
 

@@ -34,33 +34,6 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'module1',
-        path: 'module1',
-        routeBasePath: 'module1',
-        sidebarPath: require.resolve('./sideBars/module1Sidebars.ts'),
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'module2',
-        path: 'module2',
-        routeBasePath: 'module2',
-        sidebarPath: require.resolve('./sideBars/module2Sidebars.ts'),
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'module3',
-        path: 'module3',
-        routeBasePath: 'module3',
-        sidebarPath: require.resolve('./sideBars/module3Sidebars.ts'),
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
         id: 'Course',
         path: 'Course',
         routeBasePath: 'Course',
@@ -124,7 +97,7 @@ const config: Config = {
         // {to: '/module1/intro', label: 'Module 1', position: 'left'},
         // {to: '/module2/intro', label: 'Module 2', position: 'left'},
         // {to: '/module3/intro', label: 'Module 3', position: 'left'},
-        {to: '/course/overview', label: 'Course', position: 'left'},
+        {to: '/Course/overview', label: 'Course', position: 'left'},
         {to: '/community/support', label: 'Community', position: 'left'},
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -146,15 +119,15 @@ const config: Config = {
           items: [
             {
               label: 'Module 1',
-              to: '/course/overview',
+              to: '/Course/overview',
             },
             {
               label: 'Module 2',
-              to: '/course/overview',
+              to: '/Course/overview',
             },
             {
               label: 'Module 3',
-              to: '/course/overview',
+              to: '/Course/overview',
             },
           ],
         },
