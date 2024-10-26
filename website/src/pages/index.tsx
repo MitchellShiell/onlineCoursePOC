@@ -6,8 +6,8 @@ import Heading from '@theme/Heading';
 
 
 import styles from './index.module.css';
-import H5PEmbedRenderer from '../components/H5PEmbedRenderer';
-import H5PLocalRenderer from '../components/H55LocalRenderer';
+import H5PLink from '../components/H5PLink';
+import H5PLocalHTML from '../components/H5PLocalHTML';
 
 
 function HomepageHeader() {
@@ -50,18 +50,23 @@ export default function Home(): JSX.Element {
           </div>
           <div className="row">
             <div className="col col--8 col--offset-2 margin-vert--md">
-            <H5PEmbedRenderer
+            <H5PLink
                 src="https://testing-oicr.h5p.com/content/1292411552878674258/embed"
                 height="500px"
                 title="Interactive Content"
               />
-              <H5PEmbedRenderer
+              <H5PLink
                 src="https://testing-oicr.h5p.com/content/1292413201128160028/embed"
                 height="500px"
                 title="Interactive Content"
               />
-              <H5PEmbedRenderer
+              <H5PLink
                 src="https://testing-oicr.h5p.com/content/1292413203664716658/embed"
+                height="500px"
+                title="Interactive Content"
+              />
+              <H5PLink
+                src="https://testing-oicr.h5p.com/content/1292413519615786418/embed"
                 height="500px"
                 title="Interactive Content"
               />
@@ -80,18 +85,18 @@ export default function Home(): JSX.Element {
           </div>
           <div className="row">
             <div className="col col--8 col--offset-2">
-            <H5PLocalRenderer
+            <H5PLocalHTML
                 contentId="crossword"
-                title="Crossword"
-                minHeight="600px"
-                maxWidth="800px"
+                title="Hotspot Activity"
+                minHeight="600px" 
+                maxWidth="800px"   
               />
-            <H5PLocalRenderer
-                contentId="hotspot"
-                title="Hotspot"
-                minHeight="600px"
-                maxWidth="800px"
-              />
+            <H5PLocalHTML 
+              contentId="hotspot"
+              title="Hotspot Activity"
+              minHeight="auto"  
+              maxWidth="100%"  
+            />
             </div>
           </div>
         </div>
