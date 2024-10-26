@@ -6,8 +6,8 @@ import Heading from '@theme/Heading';
 
 
 import styles from './index.module.css';
-import H5PLink from '../components/H5PLink';
-import H5PLocalHTML from '../components/H5PLocalHTML';
+import SiteMap from '../components/SiteMap';
+import FundingStatement from '../components/FundingStatement';
 
 
 function HomepageHeader() {
@@ -23,7 +23,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/course/overview">
-            Click here for the rundown
+            Get Started
           </Link>
         </div>
       </div>
@@ -39,64 +39,43 @@ export default function Home(): JSX.Element {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <div className="container">
-          <div className="row">
-            <div className="col col--8 col--offset-2 text-center">
-              <h2 className="margin-top--xl">Embeded using HTML</h2>
-              <p>
-              Using a direct HTML file with seperated media files all stored locally, this displays content without tracking progress, scores, or other learning metrics. We can still export SCORM but a SCORM wrapper would only be useful if we needed learning management features, which we do not need here. 
+        <div className="col col--8 col--offset-2 padding-top--lg">
+          <h2 className="margin-top--md text-center">Research Data Management Course</h2>
+          
+          <div className="margin-bottom--md">
+            <p>
+              Welcome to this proof of concept course site built with Docusaurus. The course is aimed at teaching foundational research data management skills through interactive content and structured learning. Developed in collaboration with OICR, PCGL & bioinformatics.ca this proof of concept organizes markdown files (mdx) that support H5P content integration with additional and optional community resources.
+            </p>
+          </div>
+          <h2 className="margin-top--md text-center">Course Aims & Topics</h2>
+
+          <div className={styles.gridContainer}>
+            <div className={styles.card}>
+              <p className="margin--none">
+                <strong>Target Audience:</strong> This will be an introductory course targeting graduate students and faculty members
+              </p>
+            </div>
+            
+            <div className={styles.card}>
+              <p className="margin--none">
+                <strong>Course Features:</strong> Open Access • Self-paced learning • Interactive content • Comprehensive assessment • 
+                English-only • Non-credit
+              </p>
+            </div>
+            <div className={styles.card}>
+              <p className="margin--none">
+                <strong>Covering RDM Best Practices:</strong> Integrate data management planning into research workflows effectively.
+              </p>
+            </div>
+            
+            <div className={styles.card}>
+              <p className="margin--none">
+                <strong>& Data Repository Management:</strong> Master data deposit processes, curation, and metadata standards.
               </p>
             </div>
           </div>
-          <div className="row">
-            <div className="col col--8 col--offset-2">
-            <H5PLocalHTML 
-              contentId="hotspot"
-              title="Hot Spot"
-            />
-            <H5PLocalHTML 
-              contentId="multiplechoice"
-              title="Multiple Choice"
-            />
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col col--8 col--offset-2 text-center">
-              <h2 className="margin-top--lg">Embeded using H5P hosted Links</h2>
-              <p>
-                Proof of concept of H5P integration into docusaurus, I'll update the pages with more sample content, components and explainations. Note the home page here would be much prettier this is just to easily show that H5P is working.
-              </p>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col col--8 col--offset-2 margin-vert--md">
-            <H5PLink
-                src="https://testing-oicr.h5p.com/content/1292411552878674258/embed"
-                height="500px"
-                title="Interactive Content"
-              />
-              <H5PLink
-                src="https://testing-oicr.h5p.com/content/1292413201128160028/embed"
-                height="500px"
-                title="Interactive Content"
-              />
-              <H5PLink
-                src="https://testing-oicr.h5p.com/content/1292413203664716658/embed"
-                height="500px"
-                title="Interactive Content"
-              />
-              <H5PLink
-                src="https://testing-oicr.h5p.com/content/1292413519615786418/embed"
-                height="500px"
-                title="Interactive Content"
-              />
-     
-            </div>
-          </div>
-
-      
         </div>
+        <SiteMap />
       </main>
     </Layout>
   );

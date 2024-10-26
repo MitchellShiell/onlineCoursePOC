@@ -3,21 +3,55 @@
  * and scoped locally.
  */
 
-.heroBanner {
+ .heroBanner {
   padding: 4rem 0;
-  text-align: center;
+  text-align: left;
   position: relative;
   overflow: hidden;
+  background-image: url('../../static/img/cube-hero-desktop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 0rem;
+
+}
+
+@media screen and (max-width: 918px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.card {
+  padding: 2rem;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-primary);
+}
+
+@media screen and (max-width: 1800px) {
+  .heroBanner {
+    transition: 1s;
+    text-align: center;
+    text-align: l;
+    padding: 2rem;
+    /* background-image: url('../../static/img/cube-hero-mobile.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 918px) {
+  .heroBanner {
+    transition: 0.5s;
+    padding: 2rem;
+    background-image: none;
+  }
 }

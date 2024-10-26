@@ -1,0 +1,154 @@
+.siteMap {
+  padding: 2rem 0;
+  background-color: var(--ifm-background-color);
+}
+
+.container {
+  width: 66.5%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.leftColumn, .rightColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.categorySection {
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid var(--ifm-color-primary);
+}
+
+.categoryHeader {
+  color: var(--category-title-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.categorySubheader {
+  color: var(--category-title-color);
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1 1 calc(50% - 0.5rem);
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(  --ifm-color-primary-lightest-op);
+}
+
+.card:hover, .card:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  outline: none;
+}
+
+.cardImage {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 0.5rem;
+  object-fit: contain;
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--category-title-color);
+  margin-bottom: 0.5rem;
+}
+
+.cardDescription {
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--ifm-color-emphasis-800);
+  margin-bottom: 0;
+}
+
+.fundingBadge {
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fundingContent {
+  position: relative;
+  z-index: 2;
+}
+
+.fundingTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--category-title-color);
+}
+
+.fundingDescription {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.fundingLink {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--category-card-color);
+  color: var(--category-title-color);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fundingLink:hover {
+  color: var(--category-title-color);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .fundingBadge {
+    padding: 1.5rem;
+  }
+
+  .fundingTitle {
+    font-size: 1.5rem;
+  }
+
+  .fundingDescription {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
+
+  .cardImage {
+    width: 50px;
+    height: 50px;
+  }
+}
