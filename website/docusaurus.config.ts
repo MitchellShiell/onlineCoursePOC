@@ -22,6 +22,7 @@ const config: Config = {
   },
 
   plugins: [
+    './docsPlugin.ts',
     [
       '@docusaurus/plugin-content-docs',
       {
