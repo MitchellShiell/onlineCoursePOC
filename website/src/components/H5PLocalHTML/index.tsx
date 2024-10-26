@@ -1,30 +1,18 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './styles.module.css';
 
-const H5PLocalHTML = ({ 
+interface H5PLocalHTMLProps {
+  contentId: string;
+  title?: string;
+  minHeight?: string;
+}
+
+const H5PLocalHTML: React.FC<H5PLocalHTMLProps> = ({ 
   contentId, 
   title = 'H5P Content',
-  minHeight = '400px'
+  minHeight
 }) => {
-  const iframeRef = useRef(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleIframeLoad = () => {
-    setIsLoading(false);
-    
-    try {
-      const iframe = iframeRef.current;
-      if (iframe && iframe.contentWindow) {
-        const content = iframe.contentWindow.document.body;
-        if (content) {
-          iframe.style.height = `${content.scrollHeight}px`;
-          iframe.style.width = '100%';
-        }
-      }
-    } catch (e) {
-      console.warn('Could not adjust iframe size:', e);
-    }
-  };
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   return (
     <div className={styles.h5pContainer}>
@@ -34,18 +22,15 @@ const H5PLocalHTML = ({
             <div className={styles.spinner} />
           </div>
         )}
+        
         <iframe 
-          ref={iframeRef}
           src={`/H5P/${contentId}/index.html`}
           title={title}
-          className={styles.h5pFrame}
-          style={{ 
-            minHeight,
-            opacity: isLoading ? 0 : 1
-          }}
-          onLoad={handleIframeLoad}
+          className={`${styles.h5pFrame} ${isLoading ? styles.hidden : ''}`}
+          onLoad={() => setIsLoading(false)}
           allowFullScreen
           scrolling="no"
+          style={minHeight ? { minHeight } : undefined}
         />
       </div>
     </div>
@@ -53,3 +38,4 @@ const H5PLocalHTML = ({
 };
 
 export default H5PLocalHTML;
+

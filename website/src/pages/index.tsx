@@ -39,10 +39,31 @@ export default function Home(): JSX.Element {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <div className="container margin-vert--xl">
+        <div className="container">
           <div className="row">
             <div className="col col--8 col--offset-2 text-center">
-              <h2 className="margin-bottom--sm">Embeded using H5P hosted Links</h2>
+              <h2 className="margin-top--xl">Embeded using HTML</h2>
+              <p>
+              Using a direct HTML file with seperated media files all stored locally, this displays content without tracking progress, scores, or other learning metrics. We can still export SCORM but a SCORM wrapper would only be useful if we needed learning management features, which we do not need here. 
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col col--8 col--offset-2">
+            <H5PLocalHTML 
+              contentId="hotspot"
+              title="Hot Spot"
+            />
+            <H5PLocalHTML 
+              contentId="multiplechoice"
+              title="Multiple Choice"
+            />
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col col--8 col--offset-2 text-center">
+              <h2 className="margin-top--lg">Embeded using H5P hosted Links</h2>
               <p>
                 Proof of concept of H5P integration into docusaurus, I'll update the pages with more sample content, components and explainations. Note the home page here would be much prettier this is just to easily show that H5P is working.
               </p>
@@ -75,30 +96,6 @@ export default function Home(): JSX.Element {
           </div>
 
       
-          <div className="row">
-            <div className="col col--8 col--offset-2 text-center">
-              <h2 className="margin-bottom--sm margin-top--xl">Embeded using HTML</h2>
-              <p>
-              Using a direct HTML file with seperated media files all stored locally, this displays content without tracking progress, scores, or other learning metrics. We can still export SCORM but a SCORM wrapper would only be useful if we needed learning management features, which we do not need here. 
-              </p>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col col--8 col--offset-2">
-            <H5PLocalHTML
-                contentId="crossword"
-                title="Hotspot Activity"
-                minHeight="600px" 
-                maxWidth="800px"   
-              />
-            <H5PLocalHTML 
-              contentId="hotspot"
-              title="Hotspot Activity"
-              minHeight="auto"  
-              maxWidth="100%"  
-            />
-            </div>
-          </div>
         </div>
       </main>
     </Layout>
