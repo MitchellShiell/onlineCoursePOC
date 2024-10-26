@@ -24,7 +24,7 @@ const H5PLocalHTML: React.FC<H5PLocalHTMLProps> = ({
         )}
         
         <iframe 
-          src={`/H5P/${contentId}/index.html`}
+          src={`/H5P-Content/${contentId}/index.html`}
           title={title}
           className={`${styles.h5pFrame} ${isLoading ? styles.hidden : ''}`}
           onLoad={() => setIsLoading(false)}
