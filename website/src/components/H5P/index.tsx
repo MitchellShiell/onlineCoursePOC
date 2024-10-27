@@ -1,12 +1,12 @@
 import styles from './styles.module.css';
 
-interface H5PLocalHTMLProps {
+interface H5PProps {
   contentId: string;
   title?: string;
   minHeight?: string;
 }
 
-const H5PLocalHTML: React.FC<H5PLocalHTMLProps> = ({ 
+const H5P: React.FC<H5PProps> = ({ 
   contentId, 
   title = 'H5P Content',
   minHeight
@@ -28,5 +28,5 @@ const H5PLocalHTML: React.FC<H5PLocalHTMLProps> = ({
   );
 };
 
-export default H5PLocalHTML;
+export default H5P;
 
