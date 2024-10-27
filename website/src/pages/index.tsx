@@ -38,8 +38,9 @@ export default function Home(): JSX.Element {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
+      <SiteMap />
       <main>
-        <div className="col col--8 col--offset-2 padding-top--lg">
+        {/* <div className="col col--8 col--offset-2 padding-top--lg">
           <h2 className="margin-top--md text-center">Research Data Management Course</h2>
           
           <div className="margin-bottom--md">
@@ -74,8 +75,7 @@ export default function Home(): JSX.Element {
               </p>
             </div>
           </div>
-        </div>
-        <SiteMap />
+        </div> */}
       </main>
     </Layout>
   );

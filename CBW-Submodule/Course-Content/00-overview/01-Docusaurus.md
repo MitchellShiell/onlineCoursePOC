@@ -12,7 +12,7 @@ We use Docusaurus to render the site, providing a sleek, easy to navigate and hi
 
     - These files are stored in the `CBW-Submodule/H5P-Content` directory which is symbolically linked to the   `/website/static/H5P-Content` directory (see repository structure). 
 
-    - You can render these files in any given `.mdx` file by using the `<H5PLocalHTML />` component.
+    - You can render these files in any given `.mdx` file by using the `<H5P />` component.
 
     :::info How to embed H5P content
     For more information on embedding H5P content see the [**H5P Integration Overview page**](/course/overview/H5P)
@@ -59,8 +59,8 @@ We use Docusaurus to render the site, providing a sleek, easy to navigate and hi
 
 :::info Naming Convention
 - Files: Use kebab-case (e.g., `my-file-name.mdx`)
-- Directories: Use kebab-case with numeric prefixes (e.g., `01-introduction/`)
-- Numeric prefixes control the order in navigation (e.g., `00-overview.mdx` appears before `01-introduction.mdx`)
+- Files and directorys: Use kebab-case (e.g., `introduction.mdx`, `01-introduction/`)
+- Numeric prefixes control the order in navigation (e.g., `01-Docusaurus.md` appears before `02-H5P.mdx`)
 - File extensions: Use `.md` for plain markdown, `.mdx` when using React components
 
 The top level title, for this page `# Docusaurus` will be the title represented in the left-hand navigation.

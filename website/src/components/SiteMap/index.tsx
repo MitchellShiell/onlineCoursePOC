@@ -22,11 +22,6 @@ const Card: React.FC<CardProps> = ({ title, description, link, image }) => (
 
 const items: Item[] = [
   {
-    title: 'Overview',
-    description: 'Architecture & usage',
-    link: '/course/overview'
-  },
-  {
     title: 'Docusaurus',
     description: 'Details of this docusaurus site',
     link: '/course/overview/Docusaurus'
@@ -61,7 +56,7 @@ const SiteMap: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.categorySection}>
           <Heading as="h2" className={styles.categoryHeader}>Documentation</Heading>
-          <p className={styles.categorySubheader}>Everything you need to build this POC</p>
+          <p className={styles.categorySubheader}>Implementation and administration details of this POC</p>
           <div className={styles.cardGrid}>
             {items.map((props, idx) => (
               <Card key={idx} {...props} />

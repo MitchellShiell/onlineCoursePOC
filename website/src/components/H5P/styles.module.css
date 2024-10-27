@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 0 1rem;
 }
 
 .h5pWrapper {
@@ -10,9 +11,14 @@
   width: 100%;
   margin: 1rem auto;
   border-radius: 8px;
-  box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  overflow: hidden;
   background-color: white;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.h5pWrapper:hover {
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .h5pFrame {
@@ -20,12 +26,6 @@
   border: 0;
   display: block;
   margin-bottom: 20px;
-}
-
-.h5pWrapper:hover {
-  box-shadow: 2px 2px 4px 2px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  transform: translateY(-2px);
-  transition: all 0.5s ease;
 }
 
 .loadingContainer {
@@ -40,9 +40,9 @@
 .spinner {
   height: 2rem;
   width: 2rem;
-  border-radius: 9999px;
-  border: 2px solid rgb(17 24 39);
-  border-top-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #eee;
+  border-top-color: #333;
   animation: spin 1s linear infinite;
 }
 
@@ -58,7 +58,6 @@
   }
   
   .h5pWrapper {
-    margin: 2rem auto;
     border-radius: 4px;
   }
 }

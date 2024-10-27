@@ -4,16 +4,16 @@
 }
 
 .container {
-  width: 66.5%;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-.leftColumn, .rightColumn {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+
+@media (min-width: 768px) {
+  .container {
+    width: 66.6%;
+  }
 }
 
 .categorySection {
@@ -51,11 +51,11 @@
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: var(  --ifm-color-primary-lightest-op);
+  background-color: var(--category-card-color);
 }
 
 .card:hover, .card:focus {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   text-decoration: none;
   outline: none;
