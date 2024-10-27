@@ -7,7 +7,7 @@ import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 import SiteMap from '../components/SiteMap';
-import FundingStatement from '../components/FundingStatement';
+
 
 
 function HomepageHeader() {

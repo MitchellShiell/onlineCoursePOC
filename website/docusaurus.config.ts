@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Taming DataSaurus',
+  title: 'Taming DataSaurs',
   tagline: 'A dino-mite Open Access Course for Research Data Management',
   favicon: 'img/favicon.ico',
 
