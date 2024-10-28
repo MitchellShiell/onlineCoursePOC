@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Taming DataSaurs',
-  tagline: 'A dino-mite Open Access Course for Research Data Management',
+  title: 'Proof of Concept',
+  tagline: 'A Dino-mite Open Access Course for Research Data Management',
   favicon: 'img/favicon.ico',
 
   url: 'https://async-course-poc.com',
