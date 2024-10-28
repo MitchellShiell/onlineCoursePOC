@@ -116,7 +116,7 @@ Meet our team of bioinformatics experts, educators, and course developers who br
           />
           </a>
           <div class="avatar__intro">
-            <h3 class="avatar__name">Nia Hughs</h3>
+            <h3 class="avatar__name">Nia Hughes</h3>
           </div>
         </div>
     </div>
