@@ -17,7 +17,7 @@ const FundingStatement: React.FC = () => (
         <h4 className={styles.fundingStatementTitle}>With The Supported Of</h4>
         {/* <div className={styles.divider} /> */}
         <p className={styles.fundingStatementText}>
-          Grant #R01-CA248713 from the National Institute of Trying to Center Divs in CSS
+          Grant #Y01-XXXXXXXX from the X.Y.Z
         </p>
       </section>
 

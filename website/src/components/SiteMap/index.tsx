@@ -43,7 +43,7 @@ const FundingBadge = () => (
     <div className={styles.fundingContent}>
       <Heading as="h3" className={styles.fundingTitle}>Contributions</Heading>
       <p className={styles.fundingDescription}>
-      Created by the Ontario Institute of Cancer Research in collaboration with the Pan-Canadian Genome Library (PCGL) and Bioinformatics.ca with The Supported Of Grant #R01-CA248713 from the National Institute of Trying to Center Divs in CSS </p>
+      Created by the Ontario Institute of Cancer Research in collaboration with the Pan-Canadian Genome Library (PCGL) and Bioinformatics.ca with the supported of grant #Y01-XXXXXXXX from the X.Y.Z.</p>
       <a href="community/funding" className={styles.fundingLink}>Learn More</a>
     </div>
   </div>

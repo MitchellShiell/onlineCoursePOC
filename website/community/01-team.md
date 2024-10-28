@@ -87,6 +87,57 @@ Meet our team of bioinformatics experts, educators, and course developers who br
   </div>
 </div>
 
+## Advisors
+
+
+<div class="row">   
+  <div class="col col--4 margin-bottom--lg margin-bottom--md">
+      <div class="card__header">
+        <div class="avatar avatar--vertical">
+                  <a href="https://github.com/mbrazas">
+          <img
+            class="avatar__photo avatar__photo--xl margin-bottom--md"
+            src="https://github.com/mbrazas.png"
+          />
+          </a>
+          <div class="avatar__intro">
+            <h3 class="avatar__name">Michelle Brazas</h3>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="col col--4 margin-bottom--lg margin-bottom--md">
+      <div class="card__header">
+        <div class="avatar avatar--vertical">
+                  <a href="https://github.com/bioinformatics-ca">
+          <img
+            class="avatar__photo avatar__photo--xl margin-bottom--md"
+            src="https://github.com/bioinformatics-ca.png"
+          />
+          </a>
+          <div class="avatar__intro">
+            <h3 class="avatar__name">Nia Hughs</h3>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="col col--4 margin-bottom--lg margin-bottom--md">
+      <div class="card__header">
+        <div class="avatar avatar--vertical">
+                  <a href="https://github.com/hawrobins">
+          <img
+            class="avatar__photo avatar__photo--xl margin-bottom--md"
+            src="https://github.com/hawrobin.png"
+          />
+          </a>
+          <div class="avatar__intro">
+            <h3 class="avatar__name">Robin Haw</h3>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
 ## Honorary Mentions
 
 - **Name**: [Acknowledgement]
